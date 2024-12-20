@@ -61,7 +61,7 @@ h2 {
     width: 45px;
     height: 45px;
     background-color: #22c55e; /* Bright green */
-    color: #ffffff;
+    color: #ffffff;  // whitecolor
     border: none;
     border-radius: 50%;
     display: flex;
