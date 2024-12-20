@@ -43,10 +43,10 @@ generateEl.addEventListener('click', () => {
         return;
     }
 
-    if (length > 40) {
+    if (length > 45) {
         alert('Password length cannot exceed 40 characters.');
-        length = 40;
-        lengthEl.value = 40;
+        length = 45;
+        lengthEl.value = 45;
     }
 
     const hasLower = lowercaseEl.checked;
@@ -73,7 +73,7 @@ function generatePassword(lower, upper, number, symbol, length) {
         });
     }
 
-    generatedPassword = generatedPassword.slice(0, length);
+    generatedPassword = generatedPassword.slice(0, length); 
 
     // Ensure password has at least one of each selected type
     if (lower && !/[a-z]/.test(generatedPassword)) generatedPassword += getRandomLower();
