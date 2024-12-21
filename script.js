@@ -11,8 +11,8 @@ document.getElementById('symbols'); const generateEl =
 document.getElementById('generate'); const clipboardEl = 
 document.getElementById('clipboard');
 
-// Ensure length input doesn't exceed 40
-lengthEl.setAttribute('max', 40);
+// Ensure length input doesn't exceed 45
+lengthEl.setAttribute('max', 45);
 const randomFunc = {
     lower: getRandomLower,
     upper: getRandomUpper,
@@ -44,7 +44,7 @@ generateEl.addEventListener('click', () => {
     }
 
     if (length > 45) {
-        alert('Password length cannot exceed 40 characters.');
+        alert('Password length cannot exceed 45 characters.');
         length = 45;
         lengthEl.value = 45;
     }
